@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		@font-face {
+			font-family: SeaBattle;
+			src: url(BEACHWORKS.ttf);
+		}
+		.H4{
+			font-size: 170%;
+		}
+		.bg{
+			background-color: white;
+		}
+		.bang-img, .mem-img, .treasure-img{
+			display: none;
+		}
+		.border1 {
+			border: 1px solid #6f00ff;
+		}
+		.border2 {
+			border: 1px solid white;
+			font-family: SeaBattle;
+			color: #8500ff;
+		}
+		.ship1 {
+			
+		}
+		.ship2 {
+			
+		}
+		.ship3 {
+			
+		}
+		.ship4 {
+			
+		}
+
+
+	</style>
+</head>
+<body>
+	<div style="position: absolute;" class="pl-2 pt-2">
+		
+	</div>
+	<div class="container ">
+		<h1 class="task">Морской бой!</h1>
+		<h3 style=" color: purple">Корабль с 4 клетками - 1</h3>
+		<h3 style="color: green" >Корабли с 3 клетками - 2</h3>
+		<h3 style="color:blue ">Корабли с 2 клетками - 3</h3>
+		<h3 style="color: yellow;">Корабли с 1 клеткой - 4</h3>
+		<div style="">
+			<div class="row">
+				<div class="col-1 px-5 py-3   text-center border2"></div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>1</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>2</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>3</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>4</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>5</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>6</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>7</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>8</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>9</h4>
+				</div>
+				<div class="col-1 px-5 py-3   text-center border2">
+					<h4>10</h4>
+				</div>
+			</div>
+			<!--A-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>A</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 ship2"> <!--1 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo">  <!--3 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship1"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--B-->
+			<div class="row">
+				<div class="col-1  px-5 py-4  text-center border2">
+					<h4>B</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 ship2"> <!--1 -->
+
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--2 -->
+				
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 ship3">  <!--3 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 ship1"> <!--5 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--C-->
+			<div class="row">
+				<div class="col-1 px-5 py-4   text-center border2">
+					<h4>C</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 ship3">  <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 mimo"> <!--6 -->
+					
+				</div>	
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--D-->
+			<div class="row">
+				<div class="col-1 px-5 py-4   text-center border2">
+					<h4>D</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--1 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 ship3">  <!--3 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1 mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship2"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship2"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--E-->
+			<div class="row">
+				<div class="col-1 px-5 py-4   text-center border2">
+					<h4>E</h4>
+				</div>
+				<div class="col-1 px-5 py-4  bg border1 ship4"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1  mimo">  <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1  mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border1  mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border1   mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--F-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>F</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship4"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1   mimo">  <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship2"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--G-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>G</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship4"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship2"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo "> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--7 -->
+					
+				</div> 
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--H-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>H</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship4"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--8 -->
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--I-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>I</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship1"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 mimo"> <!--10-->
+					
+				</div>
+			</div>
+			<!--J-->
+			<div class="row">
+				<div class="col-1 px-5 py-4  text-center border2">
+					<h4>J</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship1"> <!--1 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--2 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--3 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--4 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1 ship3"> <!--5 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--6 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--7 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--8 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--9 -->
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border1  mimo"> <!--10-->
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<script type="text/javascript">
+	let ship1 = document.querySelectorAll(".ship1")
+	let ship2 = document.querySelectorAll(".ship2")
+	let ship3 = document.querySelectorAll(".ship3")
+	let ship4 = document.querySelectorAll(".ship4")
+	let mimo = document.querySelectorAll(".mimo")
+	let point = 0
+
+
+	for(let i = 0; i < ship1.length; i=i+1){
+		ship1[i].onclick = function() {
+			ship1[i].style.background = "yellow"
+			point = point + 1
+			if (point == 23) {
+				alert("win")
+			}
+		}
+	}
+
+	for(let i = 0; i < ship2.length; i=i+1){
+		ship2[i].onclick = function() {
+			ship2[i].style.background = "blue"
+			point = point + 1
+			if (point == 23) {
+				alert("win")
+			}
+		}
+	}
+
+	for(let i = 0; i < ship3.length; i=i+1){
+		ship3[i].onclick = function() {
+			ship3[i].style.background = "green"
+			point = point + 1
+			if (point == 23) {
+				alert("win")
+			}
+		}
+	}
+
+	for(let i = 0; i < ship4.length; i=i+1){
+		ship4[i].onclick = function() {
+			ship4[i].style.background = "purple"
+			point = point + 1
+			if (point == 23) {
+				alert("win")
+			}
+		}
+	}
+
+	for(let i = 0; i < mimo.length; i=i+1){
+		mimo[i].onclick = function() {
+			mimo[i].style.backgroundImage = "url(dot.png)"
+			mimo[i].style.backgroundSize = "100% 100%"
+
+		}
+	}
+</script>
+</body>
+</html>
